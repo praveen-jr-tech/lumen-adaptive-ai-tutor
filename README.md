@@ -1,9 +1,7 @@
-# Lumen — Adaptive AI Tutor
+# Lumen — AI Learning Companion
 
-An AI tutor that diagnoses *why* a student got something wrong — not just *that*
-they got it wrong — and adapts what it teaches next around that specific gap.
-
-Built for the IBM Bob Hackathon (Education track).
+An AI-supported study app for practicing concepts, learning from video lessons,
+and getting clear feedback in a learner-friendly way.
 
 ## How it works
 
@@ -64,22 +62,13 @@ clears when you move to another question or subject.
    visitors, add your key under the app's **Settings → Secrets** instead of
    asking visitors to paste their own.
 
-## Built with IBM Bob
-
-- Bob assisted with scaffolding the Streamlit app structure and the
-  misconception-tagged question bank.
-- Bob was used to prototype and refine the adaptive question-selection logic.
-- Add each team member's original IBM Bob task-session summary screenshot under
-  `bob-sessions/<team-member>/` before submitting. Do not include API keys or
-  other credentials in screenshots.
-
 ## Project structure
 
 ```
-lumen_app/
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── .streamlit/config.toml  # Brand theme (colors match submission cover image)
-├── bob-sessions/           # ← Add your team's IBM Bob screenshots here
-└── README.md
+file/
+├── app.py
+├── README.md
+├── requirements.txt
+├── streamlit_config.toml
+└── .gitignore
 ```

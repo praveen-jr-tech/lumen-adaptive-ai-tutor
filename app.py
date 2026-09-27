@@ -1,7 +1,7 @@
 """
-Lumen — Adaptive AI Tutor
-A Streamlit app that diagnoses a student's specific misconceptions (not just
-whether an answer is right or wrong) and adapts what it teaches next.
+Lumen — AI Learning Companion
+A Streamlit app for guided practice, open-ended AI questions, and learning from
+YouTube video transcripts.
 
 Run locally:
     pip install -r requirements.txt
@@ -924,12 +924,12 @@ def ai_enrich_explanation(base_explanation: str, api_key: str, provider: str) ->
 # ----------------------------------------------------------------------
 # UI
 # ----------------------------------------------------------------------
-st.set_page_config(page_title="🧠✨ Lumen — Adaptive AI Tutor", page_icon="🧠", layout="centered")
+st.set_page_config(page_title="🧠✨ Lumen — AI Learning Companion", page_icon="🧠", layout="centered")
 init_state()
 
 with st.sidebar:
     st.markdown("## 🧠✨ Lumen")
-    st.caption("Adaptive AI Tutor")
+    st.caption("AI Learning Companion")
     st.divider()
     if st.session_state.get("custom_topic_notice"):
         st.success(st.session_state.pop("custom_topic_notice"))
